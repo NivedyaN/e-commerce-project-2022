@@ -1,0 +1,46 @@
+ e commeerse website
+
+ front end:using angular
+ 1. create angular project - ng new prjct name
+ 2. run angular prjct - ng s -o
+ 3. add bootstrap, font awesome, and google fonts  to index.js  ----------(font awesome direct--link cdnjs font awesome->all.mi.css),
+                                                                         (google fonts link direct to style.css  ---- inside body tag ---apply style link)
+ 4. lazy load the commonly used html page inside the module
+      ng g m products --route products --module app.module
+ 5. add router-outlet selector inside th eroute comp html page
+ 6. create comp should be lazy  loaded in the module
+    all-products --ng g c products/all-products
+    cart -- ng g c products/cart
+    wish-list --ng g c products/wish-list
+    page not found --ng g c page-not-found
+    header --ng g c header
+    footer --ng g c footer
+ 7. set up path for each comp            
+   to redirect from localhost:4200 to specific router
+8. design comp
+
+                    Mongo db        
+9. store all products in mongo db
+
+    create backend using node nd express js
+
+1. create a folder for server    
+2. create pckage.json file, cmd:npm init
+3. create index.js file
+4. install express ; npm i express
+5. import express inside index.js file
+6. using express create a server application
+7. set up port for server application
+8. use json parser in server application
+9. install cors protocol inside server ; npm i cors
+10. import cors in index.js
+11. using cors specify origin to server app
+12. install mongoose to establish connection btwn server and mongodb ; npm i mongoose
+13. using mongoose establish connection btwn server and mongodb
+       - create a service folder
+       - create db.js file
+       - import mongoose i  db.js file
+       - using mongoose define the connection string
+       - define model for products
+       - export the model so that it can be used in another files
+14. resolving api in index.js      
